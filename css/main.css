@@ -38,7 +38,7 @@ body {
   font-size: 1.6rem;
   color: var(--color-theme);
   background-color: var(--color-white);
-  max-width: 1600px;
+  max-width: 1920px;
   margin: 0 auto;
 }
 
@@ -89,13 +89,17 @@ body {
 
 .bio {
   position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: grid;
+  place-items: center;
   transform: translateX(-40rem);
   transition-timing-function: ease-in-out;
 }
 
 .bio__p {
   line-height: 1.6;
-  padding: 1.6rem 2.4rem;
 }
 
 .navigation {
@@ -196,8 +200,129 @@ body {
     font-size: 3rem;
     margin-top: -1rem;
   }
-
+ 
   .navigation {
     width: 75%;
   }
 }
+
+/* 980px is 61 em */
+@media only screen and (max-width:61em) {
+
+  .header {
+    align-items: flex-start;
+    width: 20vw;
+  }
+
+  .grid {
+    margin-left: calc(20vw + var(--margin-padding));
+  }
+
+  .header h1 {
+    font-size: 4rem;
+  }
+
+  .header h2 {
+    font-size: 2rem;
+    margin-top: -1rem;
+  }
+ 
+  .navigation {
+    width: 85%;
+    margin-left: 0;
+    padding-left: .1rem;
+  }
+
+  .bio__p {
+    line-height: 1.2;
+    font-size: 1.4rem;
+  }
+}
+
+
+/* 700px is 61 em */
+@media only screen and (max-width:44em) {
+
+  .header {
+    align-items: flex-start;
+    width: 25vw;
+  }
+
+  .grid {
+    margin-left: calc(25vw + var(--margin-padding));
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .div-image {
+    height: 92vh;
+  }
+
+  .header h1 {
+    font-size: 4rem;
+  }
+
+  .header h2 {
+    font-size: 2rem;
+    margin-top: -1rem;
+  }
+ 
+  .navigation {
+    width: 85%;
+    margin-left: 0;
+    padding-left: .1rem;
+  }
+
+  .bio__p {
+    line-height: 1.2;
+    font-size: 1.4rem;
+  }
+}
+
+
+/* 575px is 61 em - mobile */
+@media only screen and (max-width:36em) {
+  
+  .wrap {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 0;
+  }
+
+  .header {
+    height: 20vh;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: var(--margin-padding);
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  .navigation {
+    position: relative;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.6rem;
+    text-transform: uppercase;
+  }
+  
+  
+  .grid {
+    margin-left: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .div-image {
+    height: 80vh;
+  }
+  
+}
+

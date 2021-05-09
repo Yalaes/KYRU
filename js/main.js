@@ -8,7 +8,7 @@ function translateForBio() {
 
     // bio is off screen
     if (state) {
-        logo.style.transform = "translateY(-30rem)";
+        logo.style.transform = "translateY(-35vh)";
         logo.style.transition="transform 1s";
         bio.style.transform = "translateX(0)";
         bio.style.transition="transform .6s .4s";
@@ -17,7 +17,7 @@ function translateForBio() {
     } else {
         logo.style.transform = "translateY(0)";
         logo.style.transition="transform 1s .4s";
-        bio.style.transform = "translateX(-40rem)"
+        bio.style.transform = "translateX(-100rem)"
         bio.style.transition="transform .6s";
 
     }
