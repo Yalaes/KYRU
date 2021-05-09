@@ -282,7 +282,10 @@ body {
 
 /* 575px is 61 em - mobile */
 @media only screen and (max-width:36em) {
-  
+  :root {
+    --margin-padding: 1.2rem;
+  }
+
   .wrap {
     flex-direction: column;
     justify-content: flex-start;
@@ -290,11 +293,11 @@ body {
   }
 
   .header {
-    height: 20vh;
+    height: 15vh;
     width: 100%;
     max-width: 100%;
     margin: 0;
-    padding: var(--margin-padding);
+    padding: 0 var(--margin-padding);
     position: relative;
     display: flex;
     flex-direction: row;
