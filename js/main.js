@@ -40,7 +40,7 @@ function translateForBio() {
 
 // popup image src
 function popImage(imageUrl, closeTo="#") {
-    closeBtn.href= closeTo; // set the close btn href
+    closeBtn.href= closeTo; // set the close btn href to go back 
     imageForPop.src=''; //purge the previous image
     imageForPop.src = imageUrl; 
     
