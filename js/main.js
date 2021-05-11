@@ -8,6 +8,8 @@ let bioState = true;
 // popup set image
 const imageForPop = document.querySelector(".popup__image");
 console.log(imageForPop);
+// close button link to the actual image parent div
+const closeBtn = document.querySelector("#close-btn");
 
 // when clic on bio link, the logo move up and the bio div appear from the left. like magic
 function translateForBio() {
@@ -37,7 +39,10 @@ function translateForBio() {
 //  ==================== finish
 
 // popup image src
-function popImage(imageUrl) {
+function popImage(imageUrl, closeTo="#") {
+    closeBtn.href= closeTo; // set the close btn href
     imageForPop.src=''; //purge the previous image
-    imageForPop.src = imageUrl;  
+    imageForPop.src = imageUrl; 
+    
+
 }
