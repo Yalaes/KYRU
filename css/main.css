@@ -175,7 +175,7 @@ body {
   border-radius: var(--border-rad);
   transform: translate(-50%, -50%);
   font-family: inherit;
-  font-size: clamp(1rem, 1.5vw, 3rem);
+  font-size: clamp(1.4rem, 1.5vw, 3rem);
   text-transform: uppercase;
   letter-spacing: .2rem;
   cursor: pointer;
@@ -411,9 +411,9 @@ body {
   .div-image {
     height: 80vh;
   }
-
-
-
+.caption {
+  font-size: clamp(2rem, 2vw, 3rem);
+}
 }
 
 
