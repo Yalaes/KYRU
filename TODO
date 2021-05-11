@@ -1,0 +1,13 @@
+mobile landscape:
+bio text margin/padding
+
+for popup:
+close X button should link to the actual image vignette, and not #
+when popup active , overflow should be disable
+
+maybe add some legal and copyright stuff
+
+puger image du popup..when not in cache,  the previous one is displayed when loading the current one
+maybe set a default background/ watermark ..
+
+dark mode?
