@@ -38,5 +38,6 @@ function translateForBio() {
 
 // popup image src
 function popImage(imageUrl) {
-    imageForPop.src = imageUrl;
+    imageForPop.src=''; //purge the previous image
+    imageForPop.src = imageUrl;  
 }
