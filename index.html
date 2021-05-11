@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>KYRU - Dessinateur</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Ruda:wght@400;700;900&display=swap" rel="stylesheet">
@@ -38,7 +38,7 @@
     <div class="navigation">
       <a class="link link--arrow" onclick="translateForBio()"><img src="images/icon-arrow.svg" alt=""
           class="icon-arrow"> bio</a>
-      <a href="#" class="link--icon"><img src="images/icon-insta.svg" alt=""></a>
+      <a href="https://www.instagram.com/kyru.art/" class="link--icon"><img src="images/icon-insta.svg" alt=""></a>
       <a href="#" class="link--icon"><img src="images/icon-facebook.svg" alt=""></a>
     </div>
 
@@ -49,22 +49,18 @@
     <!-- header -->
     <div class="grid">
 
-      <div class="div-image"><a href="#popup"><img src="images/image22.png" alt="" class="images"><span
-            class="caption">#jotaro</span></a> </div>
-      <div class="div-image"><a href="#"><img src="images/image33.png" alt="" class="images"><span
-            class="caption">#jotaro</span></a> </div>
-      <div class="div-image"><a href="#"><img src="images/image44.png" alt="" class="images"><span
-            class="caption">#jotaro</span></a> </div>
-      <div class="div-image"><a href="#"><img src="images/image55.png" alt="" class="images"><span
-            class="caption">#jotaro</span></a> </div>
-      <div class="div-image"><a href="#"><img src="images/image111.png" alt="" class="images"><span
-            class="caption">#jotaro</span></a> </div>
-      <div class="div-image"><a href="#"><img src="images/image22.png" alt="" class="images"><span
-            class="caption">#jotaro</span></a> </div>
-      <div class="div-image"><a href="#"><img src="images/image33.png" alt="" class="images"><span
-            class="caption">#jotaro</span></a> </div>
-      <div class="div-image"><a href="#"><img src="images/image44.png" alt="" class="images"><span
-            class="caption">#jotaro</span></a> </div>
+      <div class="div-image"><a href="#popup" onclick="popImage('images/zenitsu-750.jpg')"><img src="images/zenitsu-500.jpg" srcset="images/zenitsu-300.jpg 300w, images/zenitsu-500.jpg 500w, images/zenitsu-750.jpg 750w, images/zenitsu-500.jpg" sizes="(max-width:36em) 100vw, 25vw"  alt="kyru dessin manga" class="images">
+        <span class="caption">#zenitsu</span></a>
+      </div>
+
+      <div class="div-image"><a href="#popup" onclick="popImage('images/jotaro-750.jpg')"><img src="images/jotaro-500.jpg" srcset="images/jotaro-300.jpg 300w, images/jotaro-500.jpg 500w, images/jotaro-750.jpg 750w, images/jotaro-500.jpg" sizes="(max-width:36em) 100vw, 25vw"  alt="kyru dessin manga" class="images">
+        <span class="caption">#jotaro</span></a>
+      </div>
+
+
+      <div class="div-image"><a href="#popup" onclick="popImage('images/image33.png')"><img src="images/image33.png" alt="" class="images">
+        <span class="caption">#gyuutomioka</span></a>
+      </div>
 
     </div>
 
@@ -72,7 +68,7 @@
 
   <div class="popup" id="popup">
     <div class="popup__btn"> <a href="#">&#10006;</a></div>
-    <div class="popup__item"><img src="images/image22.png" alt="" class="popup__image"></div>
+    <div class="popup__item"><img src="#" alt="" class="popup__image"></div>
   </div>
 
   <script src="js/main.js"></script>

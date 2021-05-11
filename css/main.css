@@ -78,12 +78,12 @@ body {
   font-family: var(--font-logo);
   font-style: normal;
   font-weight: normal;
-  font-size: 9rem;
+  font-size: clamp(2rem, 6vw, 9rem);
 }
 
 .header h2 {
   color: currentColor;
-  font-size: 3rem;
+  font-size: clamp(1.4rem, 2vw, 4rem);
   margin-top: -1.6rem;
   padding-left: .5rem;
 }
@@ -102,7 +102,8 @@ body {
 
 .bio__p {
   line-height: 1.4;
-  padding-top: 2.4rem;
+  padding-top: 1rem;
+  font-size: clamp(1rem, 1.6rem, 3vh);
 }
 
 .navigation {
@@ -136,8 +137,7 @@ body {
 
 .icon-arrow {
   transform: rotate(180deg);
-  transition: transform .4s .4s;
-
+  transition: transform .4s 1s;
 }
 
 .grid {
@@ -175,7 +175,7 @@ body {
   border-radius: var(--border-rad);
   transform: translate(-50%, -50%);
   font-family: inherit;
-  font-size: 2.4rem;
+  font-size: clamp(1rem, 1.5vw, 3rem);
   text-transform: uppercase;
   letter-spacing: .2rem;
   cursor: pointer;
@@ -220,15 +220,15 @@ body {
   z-index: 2000;
   top: var(--margin-padding);
   right: var(--margin-padding);
-  height: 4.8rem;
-  width: 4.8rem;
+  height: 3rem;
+  width: 3rem;
   background-color: var(--color-theme-transparent);
   border-radius: 50%;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 800;
   color: var(--color-white);
 }
@@ -252,12 +252,7 @@ body {
 /* 75em is 1200px */
 @media only screen and (max-width:75em) {
 
-  .header h1 {
-    font-size: 7rem;
-  }
-
   .header h2 {
-    font-size: 3rem;
     margin-top: -1rem;
   }
 
@@ -283,24 +278,19 @@ body {
     margin-left: calc(20vw + var(--margin-padding));
   }
 
-  .header h1 {
-    font-size: 4rem;
-  }
-
   .header h2 {
-    font-size: 2rem;
     margin-top: -1rem;
   }
 
   .navigation {
-    width: 85%;
+    width: 100%;
     margin-left: 0;
     padding-left: .1rem;
   }
 
   .bio__p {
     line-height: 1.2;
-    font-size: 1.4rem;
+    /* font-size: 1.4rem; */
   }
 }
 
@@ -338,7 +328,7 @@ body {
 
   .bio__p {
     line-height: 1.2;
-    font-size: 1.4rem;
+    /* font-size: 1.4rem; */
   }
 }
 
@@ -382,7 +372,7 @@ body {
   .bio__p {
     margin-top: -12vh;
     line-height: 1.6;
-    font-size: 1.6rem;
+    /* font-size: 1.6rem; */
     max-width: 50ch;
     padding: calc(2 *var(--margin-padding));
     padding-right: 4rem;
@@ -396,6 +386,19 @@ body {
     align-items: center;
     gap: 1.6rem;
     text-transform: uppercase;
+    font-size: 1.4rem;
+  }
+
+  .navigation img {
+    height: 2rem;
+  }
+
+  .icon-arrow {
+    height: 1.6em;
+  }
+
+  .icon-arrow {
+    padding-top: 2px;
   }
 
   .grid {
@@ -409,13 +412,7 @@ body {
     height: 80vh;
   }
 
-  .link {
-    font-size: 1.4rem;
-  }
 
-  .icon-arrow {
-    height: 1.4rem;
-  }
 
 }
 
@@ -424,6 +421,6 @@ body {
 @media only screen and (max-height:440px) and (orientation : landscape) {
   .bio__p {
     line-height: 1.1;
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
   }
 }

@@ -5,6 +5,9 @@ const bio = document.querySelector("#bio");          // bio div
 const arrow = document.querySelector(".icon-arrow"); // for rotation
 let bioState = true;
 
+// popup set image
+const imageForPop = document.querySelector(".popup__image");
+console.log(imageForPop);
 
 // when clic on bio link, the logo move up and the bio div appear from the left. like magic
 function translateForBio() {
@@ -14,7 +17,7 @@ function translateForBio() {
     // bio is off screen
     if (state) {
         logo.style.transform = "translateY(0)";
-        if(!mediamobile) logo.style.transform = "translateY(-35vh)";
+        if(!mediamobile) logo.style.transform = "translateY(-40vh)";
         logo.style.transition="transform 1s";
         bio.style.transform = "translateX(0)";
         bio.style.transition="transform .6s .4s";
@@ -32,3 +35,8 @@ function translateForBio() {
     bioState = !bioState; // toogle state
 }
 //  ==================== finish
+
+// popup image src
+function popImage(imageUrl) {
+    imageForPop.src = imageUrl;
+}
