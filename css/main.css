@@ -314,7 +314,9 @@ body {
 
 /* 700px is 44 em */
 @media only screen and (max-width:44em) {
-
+  :root {
+    --margin-padding: 1.2rem;
+  }
   .header {
     width: 25vw;
   }
@@ -350,11 +352,10 @@ body {
   }
 }
 
+
 /* 575px is 61 em - mobile */
 @media only screen and (max-width:36em) {
-  :root {
-    --margin-padding: 1.2rem;
-  }
+
 
   .wrap {
     flex-direction: column;
@@ -437,6 +438,7 @@ body {
     align-items: flex-start;
     padding-top: 13.5vh;
   }
+ 
 }
 
 /* //galaxy fold */
