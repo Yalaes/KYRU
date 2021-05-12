@@ -103,7 +103,7 @@ body {
 .bio__p {
   line-height: 1.4;
   padding-top: 1rem;
-  font-size: clamp(1rem, 1.6rem, 3vh);
+  font-size: clamp(1rem, 1.6rem, 2.3vh);
 }
 
 .navigation {
@@ -226,7 +226,7 @@ body {
   right: var(--margin-padding);
   height: 3rem;
   width: 3rem;
-  background-color: var(--color-theme-transparent);
+  background-color: var(--color-theme);
   border-radius: 50%;
   cursor: pointer;
   display: flex;
@@ -234,7 +234,7 @@ body {
   align-items: center;
   font-size: 2rem;
   font-weight: 800;
-  color: var(--color-white);
+  color: white;
 }
 
 .popup__btn span {
@@ -363,11 +363,11 @@ body {
   }
 
   .header {
-    height: 12vh;
+    height: auto;
     width: 100%;
     max-width: 100%;
     margin: 0;
-    padding: 0 var(--margin-padding);
+    padding: var(--margin-padding);
     position: fixed;
     z-index: 100;
     background-color: var(--color-white);
@@ -381,13 +381,14 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    padding-top: 12vh;
+    /* padding-top: 12vh; */
     z-index: 10;
     width: 100vw;
+    height: 100vh;
   }
 
   .bio__p {
-    margin-top: -12vh;
+    /* margin-top: -12vh; */
     line-height: 1.6;
     max-width: 50ch;
     padding: calc(2 *var(--margin-padding));
@@ -418,7 +419,7 @@ body {
 
   .grid {
     margin-left: 0;
-    margin-top: 12vh;
+    /* margin-top: 12vh; */
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
@@ -429,4 +430,28 @@ body {
 .caption {
   font-size: clamp(2rem, 2vw, 3rem);
 }
+}
+
+@media only screen and (max-height:36em) and (orientation:landscape) {
+  .bio {
+    align-items: flex-start;
+    padding-top: 13.5vh;
+  }
+}
+
+/* //galaxy fold */
+@media only screen and (max-height:18em) and (orientation:landscape) {
+  .bio {
+    /* align-items: flex-start; */
+    padding-top: 10vh;
+  }
+
+  .logo h1 {
+    font-size: 2.5rem;
+  }
+  .logo h2 {
+    font-size: 1.4rem;
+    margin-top: -.5rem;
+    padding: 0;
+  }
 }
