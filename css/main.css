@@ -3,6 +3,7 @@
   --color-theme: #03303A;
   --color-theme-transparent: RGBA(3, 48, 58, .9);
   --color-white: #F6F8F9;
+  --color-gray: #687a7e;
   --font-logo: 'Rubik Mono One', sans-serif;
   --font-family: 'Ruda', sans-serif;
   --border-rad: .5rem;
@@ -31,6 +32,14 @@ a:active,
 a:focus {
   text-decoration: none;
   color: currentColor;
+}
+
+.link-basic {
+  color: currentColor;
+}
+
+.link-basic:hover {
+  color: var(--color-gray);
 }
 
 body {
@@ -298,14 +307,6 @@ body {
   line-height: 1.6;
   font-size: clamp(1rem, 1.6rem, 5vh);
   padding: 1rem;
-}
-
-.info a {
-  color: #aaa;
-}
-
-.info a:hover {
-  color: var(--color-white);
 }
 
 .info p {
