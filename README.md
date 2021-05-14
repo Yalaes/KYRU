@@ -1,1 +1,1 @@
-# KYRU portfolio
+# KYRU
